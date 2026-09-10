@@ -11,9 +11,9 @@
         <main>
             <p>This image below changes depending of the devise screen it is being viewedd on.</p>
             <picture>
-                <source>
-                <source>
-                <img>
+                <source media="(width < 800px)" srcset="portrait.jpg">
+                <source media="(width >= 800px)" srcset="landscape.jpg">
+                <img src="landscape.jpg" alt="Image of a lake house.">
             </picture>
         </main>
     </body>
